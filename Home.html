@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>সরস্বতী মেডিক্যাল | আমডাতলিয়া বাজার</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Hind Siliguri',sans-serif;
+    background:#f2f6fa;
+}
+
+header{
+    background:linear-gradient(90deg,#ff6a00,#ffb347);
+    color:white;
+    text-align:center;
+    padding:30px 10px;
+}
+header h1{font-size:32px;}
+header p{margin-top:5px;font-size:15px;}
+
+nav{
+    background:#1e2a78;
+    text-align:center;
+    padding:12px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+}
+nav a:hover{color:yellow;}
+
+section{
+    max-width:1100px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom:25px;
+}
+
+h2{
+    color:#ff6a00;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff6a00;
+    color:white;
+    padding:10px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    margin-top:10px;
+    border:none;
+    cursor:pointer;
+}
+.btn:hover{background:#e85c00;}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+ul{padding-left:20px;}
+ul li{margin-bottom:8px;}
+
+footer{
+    background:#1e2a78;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:14px 18px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.whatsapp:hover{background:#1ebe5d;}
+
+@media(max-width:600px){
+    header h1{font-size:24px;}
+}
+</style>
+
+<script>
+function searchMedicine(){
+    let input=document.getElementById("search").value.toLowerCase().trim();
+    let medicines=["paracetamol","azithromycin","amoxicillin","cetirizine","pantoprazole"];
+
+    if(input===""){
+        alert("Medicine name লিখুন");
+    }
+    else if(medicines.includes(input)){
+        alert("Medicine Available ✅");
+    }
+    else{
+        alert("Medicine Not Available ❌\nCall: 8340032445");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>⚕️ সরস্বতী মেডিক্যাল</h1>
+    <p>বিশ্বাসযোগ্য কেমিস্ট & ড্রাগিস্ট | আমড়াতলিয়া বাজার</p>
+</header>
+
+<nav>
+    <a href="#about">আমাদের সম্পর্কে</a>
+    <a href="#services">সেবা</a>
+    <a href="#order">অর্ডার</a>
+    <a href="#contact">যোগাযোগ</a>
+</nav>
+
+<section id="about">
+<div class="card">
+<h2>আমাদের সম্পর্কে</h2>
+<p>আমরা সকল প্রকার এলোপ্যাথিক ওষুধ, ইনজেকশন, সিরাপ, সার্জিক্যাল আইটেম ও স্বাস্থ্য সামগ্রী সরবরাহ করি। 
+বিশ্বস্ত ও দ্রুত সেবা আমাদের অঙ্গীকার।</p>
+</div>
+</section>
+
+<section id="services">
+<div class="card">
+<h2>আমাদের সেবা</h2>
+<ul>
+<li>✔ সব ধরনের এলোপ্যাথিক ওষুধ</li>
+<li>✔ ডাক্তার প্রেসক্রিপশন অনুযায়ী ওষুধ</li>
+<li>✔ ব্লাড প্রেসার ও সুগার চেক</li>
+<li>✔ জরুরি মেডিসিন সাপোর্ট</li>
+</ul>
+
+<h3 style="margin-top:20px;">🔎 Medicine Search</h3>
+<input type="text" id="search" placeholder="Medicine name লিখুন">
+<button class="btn" onclick="searchMedicine()">Search</button>
+</div>
+</section>
+
+<section id="order">
+<div class="card">
+<h2>Online Order</h2>
+<form>
+<input type="text" placeholder="আপনার নাম" required>
+<input type="tel" placeholder="মোবাইল নম্বর" required>
+<textarea rows="4" placeholder="যে ওষুধ প্রয়োজন লিখুন"></textarea>
+<button type="submit" class="btn">অর্ডার পাঠান</button>
+</form>
+</div>
+</section>
+
+<section id="contact">
+<div class="card">
+<h2>যোগাযোগ করুন</h2>
+<p><strong>📞 মোবাইল:</strong> 8340032445</p>
+<p><strong>📍 ঠিকানা:</strong> আমড়াতলিয়া বাজার</p>
+<p><strong>🕒 সময়:</strong> সকাল 7টা – রাত 10টা</p>
+
+<a href="tel:8340032445" class="btn">এখনই কল করুন</a>
+</div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/9195475 67528" target="_blank">
+WhatsApp Order
+</a>
+
+<footer>
+© 2026 সরস্বতী মেডিক্যাল | সর্বস্বত্ব সংরক্ষিত
+</footer>
+
+</body>
+</html>

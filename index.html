@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>সরস্বতী মেডিক্যাল | আমডাতলিয়া বাজার</title>
+
+<style>
+body{margin:0;font-family:sans-serif;background:#f2f6fa;}
+header{background:#ff6a00;color:white;text-align:center;padding:25px;}
+nav{background:#1e2a78;text-align:center;padding:10px;}
+nav a{color:white;text-decoration:none;margin:0 10px;}
+section{padding:30px;max-width:900px;margin:auto;}
+.card{background:white;padding:20px;margin-bottom:20px;border-radius:8px;}
+.btn{background:#ff6a00;color:white;padding:10px 15px;text-decoration:none;border:none;}
+footer{background:#1e2a78;color:white;text-align:center;padding:10px;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:12px 16px;border-radius:50px;text-decoration:none;}
+</style>
+
+<script>
+function sendWhatsApp(){
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let medicine=document.getElementById("medicine").value;
+
+let message="নাম: "+name+
+"%0Aমোবাইল: "+phone+
+"%0Aওষুধ: "+medicine;
+
+window.open("https://wa.me/918340032445?text="+message,"_blank");
+}
+</script>
+
+</head>
+<body>
+
+<header>
+<h1>⚕️ সরস্বতী মেডিক্যাল</h1>
+<p>বিশ্বাসযোগ্য কেমিস্ট & ড্রাগিস্ট | আমডাতলিয়া বাজার</p>
+</header>
+
+<nav>
+<a href="#">আমাদের সম্পর্কে</a>
+<a href="#">সেবা</a>
+<a href="#">যোগাযোগ</a>
+</nav>
+
+<section>
+<div class="card">
+<h2>আমাদের সম্পর্কে</h2>
+<p>আমরা সকল প্রকার এলোপ্যাথিক ওষুধ ও সার্জিক্যাল আইটেম সরবরাহ করি।</p>
+</div>
+
+<div class="card">
+<h2>WhatsApp অর্ডার</h2>
+<input type="text" id="name" placeholder="আপনার নাম"><br><br>
+<input type="tel" id="phone" placeholder="মোবাইল নম্বর"><br><br>
+<textarea id="medicine" placeholder="যে ওষুধ প্রয়োজন লিখুন"></textarea><br><br>
+<button class="btn" onclick="sendWhatsApp()">অর্ডার পাঠান</button>
+</div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/918340032445" target="_blank">Chat</a>
+
+<footer>
+© 2026 সরস্বতী মেডিক্যাল
+</footer>
+
+</body>
+</html>
